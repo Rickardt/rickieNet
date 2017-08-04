@@ -63,3 +63,29 @@ div.loginpopup{
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
+
+#RNlogo{
+    height: 100px;
+    
+}
+#logo{
+    height: 100px;
+    
+}
+
+div.scrollmenu {
+    background-color: #333;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}

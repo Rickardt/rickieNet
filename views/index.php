@@ -12,37 +12,18 @@
     </head>
     <body>
         <?php include 'resources/fragments/header.php';
+              include 'resources/fragments/loginPopup.php';
         ?>
-        <h1>Welcome to RickieNet</h1>
-        
-        <div class="loginpopup" id="loginPopup">
-            <div class="loginpopup-content">
-                
-                 <form id='login' action='comment/Login' method='post'>
-                    <fieldset>
-                        <legend>Login</legend>
-                        <input type='hidden' name='submitted' id='submitted' value='1'/>
-
-                        <label for='username' >Username*:</label>
-                        <input type='text' name='username' id='username' />
-
-                        <label for='password' >Password*:</label>
-                        <input type='password' name='password' id='password' />
-
-                        <input id="button" type='submit' name='Submit' value='Log In' />
-
-                        </fieldset>
-                    </form>
-                
-            </div>
-        </div>
-        
-        
-        
-        
+     
             <center>
                 <div class="menubox">
-                    <p>Welcome!</p>
+                     <div class="scrollmenu">
+                        <a href="#home">Home</a>
+                        <a href="#news">Media Stream</a>
+                        <a href="#contact">Lighting</a>
+                        <a href="#about">Server Status</a>
+                        <a href="#about">Administration</a>
+                     </div> 
 
                 </div>
             </center>
