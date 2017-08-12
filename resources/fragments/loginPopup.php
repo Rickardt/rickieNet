@@ -2,12 +2,11 @@
             <div class="loginpopup-content">
                 <img id="RNlogo" src="../../resources/images/RN.jpg"/>
                 
-                 <form id='login' action='comment/Login' method='post'>
+                 <form id='login' action='LoginPage' method='post'>
                     <fieldset>
                         <br>
                         <legend>Login</legend>
-                        <input type='hidden' name='submitted' id='submitted' value='1'/>
-
+                        
                         <label for='username' >Username*:</label>
                         <input type='text' name='username' id='username' />
                         <br>
@@ -20,6 +19,14 @@
 
                         </fieldset>
                     </form>
+                <p id="loginInfo">
+                    Login here!
+                </p>
+                
+                <div id="createAccount">
+                    
+                    
+                </div>
                 
             </div>
         </div>

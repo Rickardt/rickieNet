@@ -1,7 +1,6 @@
 $(document).ready(function(){
     
     var loginButton = document.getElementById("loginButton");
-    
     var loginPopup = document.getElementById("loginPopup");
     
     
@@ -10,7 +9,14 @@ $(document).ready(function(){
         loginPopup.style.display = "none";
     };
     
-    
+    function loginSuccess(){
+        
+        loginPopup.style.display = "none";
+    };
+    function loginFail(){
+        
+        $("#loginInfo").text("Login failed!");
+    };
     
     
     

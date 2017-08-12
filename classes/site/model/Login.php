@@ -7,13 +7,14 @@
  */
 class Login{
     
-    public function login(){
+    public function login($un,$pw){
         
         $servername = "localhost";
         $username = "root";
         $password = "";
         $db = "rickieNet";
-        session_start();
+       $un = $_POST["username"];
+       $pw = $_POST["password"];
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $db);
@@ -22,10 +23,9 @@ class Login{
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        echo "Connected successfully <br>";
 
 
-        $getUser = "SELECT id, username, password FROM users";
+        $getUser = "SELECT Username, Password, MailAdress, RealName, ID FROM users";
         $result = $conn->query($getUser);
 
         if ($result->num_rows > 0) {
@@ -34,17 +34,22 @@ class Login{
             for ($i = 0; $i < $result->num_rows; $i++) 
             {
                 $row = $result->fetch_assoc();
-                if($row["username"]=== $_POST['username'] && $row["password"]=== $_POST['password'] )
+                if($row["username"]=== $un && $row["password"]=== $pw )
                 {
                     echo 'Welcome online ' . $row["username"].'!';
-            $_SESSION["username"] = $row["username"];
-             header('Location: comment.php');
-                        //return;
-                    }
+                    $_SESSION["username"] = $row["username"];
+                    echo '<script type="text/javascript">',
+                         'loginSuccess();',
+                         '</script>';                  
                 }
-                echo 'incorrect username or password!';
+            }
+                echo '<script type="text/javascript">',
+                         'loginFail();',
+                         '</script>';  
             } else {
-                echo "0 results";
+                echo '<script type="text/javascript">',
+                         'loginFail();',
+                         '</script>';  
                 }
             $conn->close();
 

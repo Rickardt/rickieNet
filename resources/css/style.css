@@ -1,6 +1,7 @@
 body{
     background-color: black;
     background-image: url("../images/wood.jpg");
+    border: 1px;
     
 }
 h1{
@@ -16,6 +17,8 @@ div.menubox{
     margin-left: 10%;
     margin-right: 10%;
     position: absolute;
+    padding: 40px;
+    box-sizing: border-box;
     
 }
 
@@ -50,7 +53,9 @@ div.loginpopup{
       -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    
+    height: 200px;
     
 }
 /* Add Animation */
@@ -63,19 +68,23 @@ div.loginpopup{
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
-
+/* IMAGE MODS */
 #RNlogo{
-    height: 100px;
+    height: 200px;
+    float: left;
+    padding-right: 40px;
     
 }
 #logo{
     height: 100px;
-    
+    float: left;
 }
 
 div.scrollmenu {
-    background-color: #333;
     white-space: nowrap;
+    height: 100px;
+    width: 80%;
+    padding-top: 30px;
 }
 
 div.scrollmenu a {
@@ -83,9 +92,37 @@ div.scrollmenu a {
     color: white;
     text-align: center;
     padding: 14px;
+    
     text-decoration: none;
+    border-style: solid;
+    border-color: #ff6300;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 div.scrollmenu a:hover {
-    background-color: #777;
+    color: #ff6300;
+}
+form#login{
+    
+    
+    
+}
+#createAccount{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    border-color: black;
+    float: left;
+}
+
+div.indexCard{
+    width: 200px;
+    height: 300px;
+    border-style: solid;
+    border-color: #ff6300;
+    border-width: 2px;
+    float: left;
+    border-radius: 5px;
+
 }

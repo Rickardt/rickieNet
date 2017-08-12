@@ -35,4 +35,5 @@ use Id1354fw\Core\Start;
 
 require_once 'classes/Id1354fw/Core/Start.php';
 $starter = new Start();
+session_start();
 $starter->startFramework();

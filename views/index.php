@@ -12,21 +12,24 @@
     </head>
     <body>
         <?php include 'resources/fragments/header.php';
+        
+              if($_SESSION['userOnline'] === FALSE){
               include 'resources/fragments/loginPopup.php';
+              }
         ?>
      
-            <center>
-                <div class="menubox">
-                     <div class="scrollmenu">
-                        <a href="#home">Home</a>
-                        <a href="#news">Media Stream</a>
-                        <a href="#contact">Lighting</a>
-                        <a href="#about">Server Status</a>
-                        <a href="#about">Administration</a>
-                     </div> 
-
+        <div class="menubox">
+            
+            
+                <div class="indexCard">
+                    <button id="getInfo">Click here</button>
+                    
                 </div>
-            </center>
+                
+                
+            
+            
+        </div>
     
     </body>
 </html>
