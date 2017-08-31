@@ -2,16 +2,15 @@ body{
     background-color: black;
     background-image: url("../images/wood.jpg");
     border: 1px;
-    
+    font-family: sans-serif;
 }
 h1{
     color: white;
 }
 
-div.menubox{
+div#menubox{
     background-color:white;
     width: 80%;
-    height: 600px;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 10%;
@@ -122,6 +121,8 @@ div.indexCard{
     border-style: solid;
     border-color: #ff6300;
     border-width: 2px;
+    padding: 20px;
+    margin: 10px;
     float: left;
     border-radius: 5px;
 

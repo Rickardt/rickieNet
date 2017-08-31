@@ -3,10 +3,10 @@
                 
     <center>
                      <div class="scrollmenu">
-                        <a href="#">Home</a>
+                        <a href="FirstPage">Home</a>
                         <a href="#">Media Stream</a>
                         <a href="#">Lighting</a>
-                        <a href="#">Server Status</a>
+                        <a href="StatusPage">Server Status</a>
                         <a href="#">Administration</a>
                      </div> 
 

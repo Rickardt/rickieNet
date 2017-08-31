@@ -13,4 +13,6 @@ Options All -Indexes
 
 	RewriteRule (.*) index.php [L,QSA]
 </IfModule>
-
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
